@@ -8,7 +8,7 @@ mkdir -p $SETUP_DIR
 if [ ! -f $INSTALLED_FLAG ]; then
 
   echo "Installing PredictionIO..."
-  bash -e -c "$(curl -s https://install.prediction.io/install.sh)" 0 -y
+  bash -e -c "$(curl -s https://gist.githubusercontent.com/shuke0327/99ef010a7bdac77dd7b3788773710c2b/raw/47d3b4269aba44e10e71e44b32883380b4b07751/install.sh)" 0 -y
   if [ $? -ne 0 ]; then
 
     echo "ERROR: PredictionIO installation failed."
